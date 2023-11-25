@@ -15,6 +15,10 @@ mongoose.connect('mongodb://127.0.0.1:27017/Assignment2', { useNewUrlParser: tru
 //initialize userID as null
 let userID = null;
 
+app.get("/", (req, res)=> {
+  res.send("Backend for MERN PRoduct Management System");
+})
+
 
 // ----------------------------------Login route (used to check if the person is registered)----------------------------------
 app.post('/login', (req, res) => {
